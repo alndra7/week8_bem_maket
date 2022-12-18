@@ -1,0 +1,169 @@
+@font-face {
+    font-family: Roboto Slab;
+    src: url(/assets/fonts/RobotoSlab.ttf);
+}
+@font-face {
+    font-family: Intro;
+    font-weight: 400;
+    src: url(/assets/fonts/Intro.ttf);
+}
+.header {
+    /*border: 1px solid red;*/
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem 0 3rem;
+    align-items:flex-end;
+}
+.header__logo {
+    height: 40%;
+}
+/*---------КНОПКА--------------*/
+.button-cart {
+    height: 38px;
+    width: 115px;
+    border-radius: 100px;
+    font-family: 'Intro', Courier, monospace;
+    font-size: 13px;
+    line-height: 13px;
+    color: white;
+    background-color: #5222D0;
+    border: 0;
+}
+
+.button-cart__image {
+    padding-left: 5px;
+}
+
+.main-title {
+    font-family: 'Intro', Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 120%;
+    padding-left: 4rem;
+}
+
+.main-block {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "card1 card2 card3"
+                         'card4 card5 form';
+    column-gap: 8rem;
+    row-gap: 3rem;
+}
+
+.main-block__card-1 {
+    grid-area: card1;
+}
+
+.main-block__card-2 {
+    grid-area: card2;
+}
+
+.main-block__card-3 {
+    grid-area: card3;
+}
+
+.main-block__card-4 {
+    grid-area: card4;
+}
+
+.main-block__card-5 {
+    grid-area: card5;
+}
+
+.main-block__form {
+    grid-area: form;
+}
+
+.main-block__title, .main-block__title_color{
+    font-family: 'Intro', Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 120%;
+}
+
+.main-block__text {
+    font-family: 'Roboto Slab', Courier, monospace;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+}
+
+.main-block__form {
+    display: flex;
+    flex-direction: column;
+    background-color:  #EC615B;
+    padding-left: 2rem;
+}
+
+.main-block__title_color {
+    color: white;
+}
+
+.main-block__input {
+    height: 20%;
+    width: 90%;
+    border: 0;
+}
+
+.main-block__input::placeholder {
+    font-family: 'Roboto Slab', Courier, monospace;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+    color: black;
+    padding-left: 1rem;
+}
+
+.main-block__button {
+    width: 135px;
+    height: 38px;
+    border-radius: 100px;
+    background-color: #5222D0;
+    color: white;
+    font-family: 'Intro', Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    border: 0;
+    margin-top: 3rem;
+}
+
+.navigation {
+    /*border: 1px solid red;*/
+    padding: 0 0 0 4rem;
+    height: 10rem;
+}
+
+.navigaton__list {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.navigation__item {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.navigation__link {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+}
